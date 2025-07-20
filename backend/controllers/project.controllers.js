@@ -7,6 +7,7 @@ export const createProject = async (req, res) => {
     const {
       name,
       description,
+      date,
       tech_stack,
       features,
       github_link,
@@ -33,6 +34,7 @@ export const createProject = async (req, res) => {
     const project = await Project.create({
       name,
       description,
+      date,
       tech_stack: JSON.parse(tech_stack),
       features: JSON.parse(features),
       github_link,
