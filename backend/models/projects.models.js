@@ -11,11 +11,11 @@ const ProjectSchema = new mongoose.Schema(
     name: { type: String, required: true },
     pic: imageSchema, // Now an object (not string) for Cloudinary uploads
     date: { type: Date, default: Date.now },
-    github_link: { type: String, required: true },
-    deployed_link: { type: String, required: true },
-    description: { type: String, required: true },
-    tech_stack: [{ type: String, required: true }],
-    features: [{ type: String, required: true }],
+    github_link: { type: String,  },
+    deployed_link: { type: String, },
+    description: { type: String,  },
+    tech_stack: [{ type: String,  }],
+    features: [{ type: String, }],
     screenshots: [imageSchema], // Array of Cloudinary images
   },
   {
